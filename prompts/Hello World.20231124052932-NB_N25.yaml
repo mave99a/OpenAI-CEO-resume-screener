@@ -1,0 +1,14 @@
+name: Hello World
+prompts:
+  - id: "1"
+    content: Say hello in {{language}}!
+    role: user
+parameters:
+  language:
+    defaultValue: English
+createdBy: zNKgzFjmxu9CrwFBd2VTNWuxWy2zKne6KjaT
+updatedBy: zNKgzFjmxu9CrwFBd2VTNWuxWy2zKne6KjaT
+createdAt: 2023-09-30T12:23:04.603Z
+updatedAt: 2023-09-30T12:23:04.603Z
+public: false
+id: 20231124052932-NB_N25
