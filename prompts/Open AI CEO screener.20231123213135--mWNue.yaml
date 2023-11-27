@@ -1,0 +1,24 @@
+id: 20231123213135--mWNue
+createdAt: 2023-11-24T05:31:35.892Z
+updatedAt: 2023-11-24T05:31:35.892Z
+createdBy: ""
+updatedBy: ""
+prompts:
+  - id: g14LlDs7K8o6WxC88ztAB
+    role: call-prompt
+    output: Resume Screener
+    template:
+      id: 20231123213022-fd2_GU
+      name: Resume Screener
+    parameters:
+      job_description: OpenAI's new CEO (former CEO has fired by the board)
+      criteria_str: |-
+        - Capable to fight the board. 
+        - good at fund raising, need to be able raise billions 
+      resume: ""
+  - id: aSZS7AdFaE5FNrpsHZELR
+    content: "{{ Resume Screener }}"
+    role: user
+parameters:
+  resume: {}
+name: Open AI CEO screener

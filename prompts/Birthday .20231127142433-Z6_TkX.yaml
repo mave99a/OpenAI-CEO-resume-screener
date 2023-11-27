@@ -1,0 +1,18 @@
+id: 20231127142433-Z6_TkX
+createdAt: 2023-11-27T22:24:33.331Z
+updatedAt: 2023-11-27T22:24:33.331Z
+createdBy: ""
+updatedBy: ""
+prompts:
+  - id: 6zFEQPlecBjSUpaVfEynk
+    role: call-function
+    output: var-HUxFm
+    code: return new Date().toDateString();
+  - id: a80yClaNq23iNbiwot_GA
+    role: user
+    content: Today is {{ var-HUxFm }}.
+  - id: vbJGBhahYoRND4fcwuEEU
+    content: "how old is Abraham lincoln "
+    role: user
+parameters: {}
+name: "Birthday "

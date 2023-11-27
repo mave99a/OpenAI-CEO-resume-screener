@@ -1,0 +1,38 @@
+id: 20231123213022-fd2_GU
+createdAt: 2023-11-24T05:30:22.463Z
+updatedAt: 2023-11-24T05:30:22.463Z
+createdBy: ""
+updatedBy: ""
+prompts:
+  - id: 8oDdkqdNYbVmRaalICl8P
+    role: system
+    content: >-
+      You are an expert resume reviewer. 
+
+      You job is to decide if the candidate pass the resume screen given the job description and a list of criteria:
+
+
+      ### Job Description
+
+      {{ job_description }} 
+
+
+      ### Screening Criteria
+
+      {{ criteria_str }} 
+
+
+      ### Resume 
+
+      {{ resume }}
+parameters:
+  job_description:
+    type: string
+    multiline: true
+  criteria_str:
+    type: string
+    multiline: true
+  resume:
+    type: string
+    multiline: true
+name: Resume Screener
