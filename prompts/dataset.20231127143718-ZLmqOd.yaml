@@ -1,0 +1,33 @@
+id: 20231127143718-ZLmqOd
+createdAt: 2023-11-27T22:37:18.615Z
+updatedAt: 2023-11-27T22:37:18.615Z
+createdBy: ""
+updatedBy: ""
+prompts:
+  - id: pIYrUBEKOkkxo4EAplxtS
+    role: call-dataset
+    output: var-GcXWK
+    parameters:
+      query: "{{ company }}"
+    vectorStore:
+      id: pWW80VDuNA3wfvKO
+      name: DID 文章 Dataset
+  - id: 7RGebNkdjv8btjCzimCri
+    role: user
+    content: >-
+      ##context ##
+
+
+      {{ var-GcXWK }}
+
+
+      ## instruct ##
+
+      Please write something about {{ company }} with the background information in "context" section.
+  - id: N1ZqH3dly4CARhAkaFCu7
+    content: If there is not enough information in the "context" related  to  {{
+      company }},  output "I can't enough information for {{ company }}"
+    role: user
+parameters:
+  company: {}
+name: dataset

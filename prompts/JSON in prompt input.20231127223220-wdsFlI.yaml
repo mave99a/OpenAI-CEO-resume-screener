@@ -1,0 +1,41 @@
+id: 20231127223220-wdsFlI
+createdAt: 2023-11-28T06:32:20.041Z
+updatedAt: 2023-11-28T06:32:20.041Z
+createdBy: ""
+updatedBy: ""
+prompts:
+  - id: PFzAQ-wxyyjDYvLJzWtfn
+    role: user
+    content: >-
+      
+      following is a JSON format data: 
+
+
+      {"Date":
+
+      [date and time of the call. use format:
+
+      "YYYY-MM-DD hh:mm:ss"
+
+      ]
+
+      ,"Caller":
+
+      [Caller’s name and phone number if we have it. (or the name and phone number of who was called on outgoing calls) Sometimes the call transcription will have a better quality name than the caller ID. format phone numbers as 1-555-555-1212
+
+      Example: "name 1-555-555-1212"
+
+      Example: "1-555-555-1212"
+
+      Example: "name, company 1-555-555-1212"
+
+      Example: "company 1-555-555-1212"]
+
+      ,"Summary":
+
+      [the summary of the call with sufficient detail for someone new to understand what transpired on the call]}
+  - id: YAzmT5HqOBjvXx2JJK3Pm
+    content: what did the message look like
+    role: user
+parameters: {}
+name: JSON in prompt input

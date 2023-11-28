@@ -1,0 +1,19 @@
+id: 20231127163251--sMN8H
+createdAt: 2023-11-28T00:32:51.260Z
+updatedAt: 2023-11-28T00:32:51.260Z
+createdBy: ""
+updatedBy: ""
+prompts:
+  - id: gatJWaxRkRgQpjlCokkYI
+    role: call-api
+    output: SERP
+    method: get
+    url: https://serpapi.com/search.json?engine=google&q={{keyword}}&google_domain=google.com&gl=us&hl=en&api_key=fa854e8e08df08382b2c99b7afc877c99e0b9f08330e662af6e3e9482c2c70e5
+  - id: bSxLFpgcfyh9CtRc__qKM
+    role: user
+    content: |+
+      output:  {{ SERP.related_searches | filter}}
+
+parameters:
+  keyword: {}
+name: SERP
