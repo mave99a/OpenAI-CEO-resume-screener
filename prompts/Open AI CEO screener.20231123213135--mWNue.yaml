@@ -16,9 +16,15 @@ prompts:
         - Capable to fight the board. 
         - good at fund raising, need to be able raise billions 
       resume: ""
+      position: Open AI CEO
+      scrn: |-
+        - need to good at fight with the board
+        - need to good at raise fund of billions
+      jd: ""
   - id: aSZS7AdFaE5FNrpsHZELR
     content: "{{ Resume Screener }}"
     role: user
 parameters:
   resume: {}
+  jd: {}
 name: Open AI CEO screener
