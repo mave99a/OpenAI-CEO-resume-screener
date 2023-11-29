@@ -1,0 +1,25 @@
+id: 20231128213508-C-j0Ue
+createdAt: 2023-11-29T05:35:08.587Z
+updatedAt: 2023-11-29T05:35:08.587Z
+createdBy: ""
+updatedBy: ""
+prompts:
+  - id: 0X0lkErZQrQEEINmdR492
+    role: call-prompt
+    output: Position Screener
+    template:
+      id: 20231128213210-9galVD
+      name: Position Screener
+    parameters:
+      position: Open AI CEO
+      des: Don't get fired again by the board
+      scrn: |-
+        - good at fight with the board
+        - be able to raise billions of fund
+      resume: ""
+  - id: 61IsGIKEhr9lYCA9_g6No
+    role: user
+    content: "{{ Position Screener }}"
+parameters:
+  resume: {}
+name: Open AI CEO screen
